@@ -1,0 +1,64 @@
+nav {
+    width: 98%;
+    margin-left: 10px;
+}
+
+a.primary-color {
+    background: rgba(0, 0, 0, 0);
+}
+
+a.primary-color:hover {
+    background: rgba(0, 0, 0, 0);
+}
+
+.nav-wrapper {
+    max-width: 1032px;
+    margin: 0px auto;
+    position: relative;
+    left: -10px;
+}
+
+.nav-container {
+    position: relative;
+    left: 14px;
+
+}
+
+.active {
+    color: tomato !important;
+}
+
+.primary-color {
+    color: rgb(0, 61, 0);
+}
+
+.secondary-color {
+    color: tomato !important;
+}
+
+.third-color {
+    color: #2eca7f;
+}
+
+@media screen and (max-width: 400px) {
+    a.brand-logo {
+        font-size: 14px !important;
+    }
+}
+
+.brand-logo {
+    font-size: 20px !important;
+    /* margin-left: 12px; */
+}
+
+nav.white {
+    box-shadow: none;
+}
+
+/* ul.right {
+    margin-right: 14px;
+} */
+
+.bold-text {
+    font-weight: 600;
+}
