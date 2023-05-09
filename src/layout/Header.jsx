@@ -15,6 +15,24 @@ function Header() {
         });
     }, [])
 
+
+    const lineHome = {
+        initial: { width: 0 },
+        animate: { width: '42px' },
+    }
+    const lineResume = {
+        initial: { width: 0 },
+        animate: { width: '54px' },
+    }
+    const linePortfolio = {
+        initial: { width: 0 },
+        animate: { width: '58px' },
+    }
+    const lineContact = {
+        initial: { width: 0 },
+        animate: { width: '53px' },
+    }
+
     return (
         <nav className="white" role="navigation">
             <div className="nav-wrapper ">
@@ -25,37 +43,50 @@ function Header() {
                     Victor <span className="primary-color">Krzheminsky</span></Link>
                 <ul className="right hide-on-med-and-down nav-container">
                     <motion.li
-                        transition={{
-                            duration: .2,
-                        }}
-                        whileHover={{
-                            rotate: -10
-                        }}
-                    ><NavLink className="primary-color" to="/">Home</NavLink></motion.li>
+                        style={{ position: 'relative' }}
+                        initial="initial"
+                        animate="initial"
+                        whileHover="animate"
+                    ><NavLink className="primary-color" to="/">Home</NavLink>
+                        <motion.div className='line'
+                            variants={lineHome}
+                        ></motion.div>
+                    </motion.li>
                     <motion.li
-                        transition={{
-                            duration: .2,
-                        }}
-                        whileHover={{
-                            rotate: -10
-                        }}><NavLink className="primary-color" to="/resume">Resume</NavLink></motion.li>
-                    <motion.li transition={{
-                        duration: .2,
-                    }}
-                        whileHover={{
-                            rotate: -10
-                        }}><NavLink className="primary-color" to="/portfolio">Portfolio</NavLink></motion.li>
-                    <motion.li transition={{
-                        duration: .2,
-                    }}
-                        whileHover={{
-                            rotate: -10
-                        }}><NavLink className="primary-color" to="/contact">Contact</NavLink></motion.li>
+                        style={{ position: 'relative' }}
+                        initial="initial"
+                        animate="initial"
+                        whileHover="animate"
+                    ><NavLink className="primary-color" to="/resume">Resume</NavLink>
+                        <motion.div className='line'
+                            variants={lineResume}
+                        ></motion.div>
+                    </motion.li>
+                    <motion.li
+                        style={{ position: 'relative' }}
+                        initial="initial"
+                        animate="initial"
+                        whileHover="animate"
+                    ><NavLink className="primary-color" to="/portfolio">Portfolio</NavLink>
+                        <motion.div className='line'
+                            variants={linePortfolio}
+                        ></motion.div>
+                    </motion.li>
+                    <motion.li
+                        style={{ position: 'relative' }}
+                        initial="initial"
+                        animate="initial"
+                        whileHover="animate"
+                    ><NavLink className="primary-color" to="/contact">Contact</NavLink>
+                        <motion.div className='line'
+                            variants={lineContact}
+                        ></motion.div>
+
+                    </motion.li>
                 </ul>
                 <ul id="nav-mobile" className="sidenav">
                     <li><NavLink className="primary-color" to="/">Home</NavLink></li>
                     <li><NavLink className="primary-color" to="/resume">Resume</NavLink></li>
-                    <li><NavLink className="primary-color" to="/services">Services</NavLink></li>
                     <li><NavLink className="primary-color" to="/portfolio">Portfolio</NavLink></li>
                     <li><NavLink className="primary-color" to="/contact">Contact</NavLink></li>
                 </ul>

@@ -8,7 +8,7 @@ function Developer() {
 
     useEffect(() => {
         const typed = new Typed(develop.current, {
-            strings: ['Frontend-developer', 'Flutter-developer'],
+            strings: ['Frontend-developer', 'React-developer', 'Flutter-developer'],
             typeSpeed: 40,
             fadeOut: true,
             loop: true,

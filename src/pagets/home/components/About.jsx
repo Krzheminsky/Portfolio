@@ -8,7 +8,7 @@ function Ebout() {
             <div className='bl-title'>
                 <motion.h3
                     initial={{
-                        x: 450,
+                        x: 250,
                         opacity: 0,
                     }}
                     animate={{

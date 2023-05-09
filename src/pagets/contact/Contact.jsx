@@ -30,7 +30,7 @@ function Contact() {
                                     }}
 
                                     initial={{
-                                        x: 450,
+                                        x: 250,
                                         opacity: 0,
                                     }}
                                     transition={{
@@ -54,7 +54,7 @@ function Contact() {
                                     opacity: 0,
                                 }}
                                 whileInView={{
-                                    width: '124px',
+                                    width: '123px',
                                     opacity: 1
                                 }}
                                 transition={{
@@ -121,7 +121,7 @@ function Contact() {
                                         opacity: 1
                                     }}
                                     initial={{
-                                        x: 300,
+                                        x: 250,
                                         opacity: 0,
                                     }}
                                     transition={{

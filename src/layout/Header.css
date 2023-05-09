@@ -21,7 +21,6 @@ a.primary-color:hover {
 .nav-container {
     position: relative;
     left: 14px;
-
 }
 
 .active {
@@ -48,17 +47,26 @@ a.primary-color:hover {
 
 .brand-logo {
     font-size: 20px !important;
-    /* margin-left: 12px; */
 }
 
 nav.white {
     box-shadow: none;
 }
 
-/* ul.right {
-    margin-right: 14px;
-} */
-
 .bold-text {
     font-weight: 600;
+}
+
+div.line {
+    display: inline-block;
+    position: absolute;
+    top: 42px;
+    left: 15px;
+    height: 4px;
+    background-color: #2eca7f;
+    border-radius: 2px;
+}
+
+.sidenav li>a {
+    color: rgb(0, 61, 0);
 }
