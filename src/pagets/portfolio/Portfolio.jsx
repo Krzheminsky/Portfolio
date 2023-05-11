@@ -303,7 +303,7 @@ function Portfolio() {
                                     <div
                                         ref={refComponentWeb}
                                         className="my-card"
-                                        style={{ position: 'relative', maxHeight: '230px' }}
+                                        style={{ position: 'relative', maxHeight: '260px' }}
                                         onMouseEnter={(e) => (
                                             onMouseEnterAll(e),
                                             el.status(true)
@@ -395,7 +395,7 @@ function Portfolio() {
                                 }}>
                             </motion.div>
                             {componentNativ.map(el => (
-                                <div className="col s12 m4 i-do">
+                                <div key={el.name} className="col s12 m4 i-do">
                                     <div
                                         ref={refComponent}
                                         className="my-card"

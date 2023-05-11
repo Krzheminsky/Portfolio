@@ -1,12 +1,12 @@
 import { Header } from "./layout/Header";
-import { Contact } from './pagets/contact/Contact'
-import { Home } from './pagets/home/Home'
-import { Portfolio } from './pagets/portfolio/Portfolio'
-import { Resume } from './pagets/resume/Resume'
+import { Contact } from './pagets/contact/Contact';
+import { Home } from './pagets/home/Home';
+import { Portfolio } from './pagets/portfolio/Portfolio';
+import { Resume } from './pagets/resume/Resume';
 import { useTransition, animated, useTrail } from 'react-spring';
 import { Route, useLocation, Routes } from 'react-router-dom';
-import { useEffect, useState } from 'react'
-
+import { useEffect, useState } from 'react';
+import "./App.css";
 function App() {
 
   const anim1 = {
@@ -83,7 +83,7 @@ function App() {
       <main className="containe " style={{ position: 'relative', overflowX: 'hidden', minHeight: '90vh' }}>
         {transitions.map(({ item, props, key }) => (
           <animated.div key={key} style={props}>
-            <div style={{ position: 'absolute', width: '98%', marginLeft: '10px' }}>
+            <div className="primary-card">
               <Routes location={item}>
                 <Route path="/" element={<Home />} />
                 <Route path="/contact" element={<Contact />} />

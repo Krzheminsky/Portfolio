@@ -10,6 +10,7 @@
     "email-js": "^2.0.2",
     "framer-motion": "^10.12.4",
     "jquery": "^3.6.4",
+    "leaflet": "^1.9.3",
     "materialize-css": "^1.0.0-rc.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

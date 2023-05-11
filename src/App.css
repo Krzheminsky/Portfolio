@@ -1,3 +1,9 @@
+div.primary-card {
+    position: absolute;
+    width: 98%;
+    margin-left: 10px;
+}
+
 section.vizitka,
 section.resume,
 section.portfolio,
@@ -60,6 +66,10 @@ h1 {
     h1 {
         font-size: 34px;
     }
+
+    div.eyes {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -84,6 +94,14 @@ h1 {
     div.col.s12.m6.experience {
         padding: 0;
     }
+
+    div.primary-card {
+
+        width: 100%;
+        margin-left: 0;
+    }
+
+
 }
 
 h3 {
