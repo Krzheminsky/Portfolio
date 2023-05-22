@@ -3,7 +3,7 @@ import '../../App.css'
 import { Others } from "./components/Others";
 import { Technologies } from "./components/Technologies";
 
-function Resume() {
+function ResumeU() {
 
     return (
         < section className='resume z-depth-4' >
@@ -11,7 +11,7 @@ function Resume() {
                 <div className="row" style={{ marginBottom: '0px' }}>
                     <div className="col s12 title" >
                         <div className="title-about">
-                            <h1 style={{ margin: '0px auto' }}>Resume</h1>
+                            <h1 style={{ margin: '0px auto' }}>Резюме</h1>
                         </div>
                     </div>
                 </div>
@@ -33,7 +33,7 @@ function Resume() {
                                         duration: 1.8,
                                     }}
                                     style={{ marginBottom: '0px' }}
-                                >Tech I <span className='secondary-color'>Use</span>
+                                >Що я <span className='secondary-color'>використовую</span>
                                 </motion.h3>
                             </div>
                             <motion.div
@@ -47,7 +47,7 @@ function Resume() {
                                     opacity: 0,
                                 }}
                                 animate={{
-                                    width: '100px',
+                                    width: '200px',
                                     opacity: 1
                                 }}
                                 transition={{
@@ -70,7 +70,7 @@ function Resume() {
                                     delay: 0.5,
                                     duration: 0.5,
                                 }}
-                                className="primary-color">These are the technologies I use to build applications.</motion.h6>
+                                className="primary-color">Це технології, які я використовую для створення програм.</motion.h6>
                             <div className="resume-links" >
                                 <Technologies />
                             </div>
@@ -89,7 +89,7 @@ function Resume() {
                                     delay: 0.5,
                                     duration: 0.5,
                                 }}
-                                className="primary-color">Others... and more!</motion.h6>
+                                className="primary-color">Інші... і багато іншого!</motion.h6>
                             <div className="resume-links" >
                                 <Others />
                             </div>
@@ -116,7 +116,7 @@ function Resume() {
                                     }}
                                     style={{ marginBottom: '0px', display: 'inline-block' }}
 
-                                >What I<span className='secondary-color'> Can Do</span>
+                                >Що я можу<span className='secondary-color'> зробити</span>
                                 </motion.h3>
                             </div>
                             <motion.div
@@ -130,7 +130,7 @@ function Resume() {
                                     opacity: 0,
                                 }}
                                 whileInView={{
-                                    width: '136px',
+                                    width: '194px',
                                     opacity: 1
                                 }}
                                 transition={{
@@ -139,21 +139,21 @@ function Resume() {
                                 }}>
                             </motion.div>
                             <div className="col s12 m6 i-do" style={{ paddingLeft: '0px' }}  >
-                                <div className="my-card what-i-can-do">
+                                <div className="my-card what-i-can-do-u">
                                     <h6>
-                                        Frontend apps
+                                        Інтерфейсні програми
                                     </h6>
-                                    <p>Build client-side applications with modern features like SPA and maintain semantic coding style among other best practices for SEO optimisation. Use modern tech such as React (React.js), Bootstrap and Framer Motion.</p>
+                                    <p>Створюю програми на стороні клієнта з такими сучасними функціями, як SPA, з дотриманням стилю семантичної верстки та інших передових практик для оптимізації SEO. Використовую сучасні технології, такі як React, Bootstrap і Framer Motion.</p>
                                 </div>
                             </div>
                             <div className="col s12 m6 i-do" style={{ paddingRight: '0px' }}>
 
-                                <div className="my-card what-i-can-do">
+                                <div className="my-card what-i-can-do-u">
                                     <h6>
-                                        Native apps
+                                        Нативні програми
                                     </h6>
                                     <p>
-                                        Use Flutter to build and maintain mobile apps that run on both Android and iOS, as well as interactive apps that you want to run on your web pages or desktop. Flutter is modern, fast, cross-platform and popular.
+                                        Використовую Dart/Flutter для створення та підтримки мобільних додатків на Android, а також інтерактивних програм, які ви можете запускати на своїх веб-сторінках або робочому столі. Flutter сучасний, кросплатформний і популярний.
                                     </p>
                                 </div>
                             </div>
@@ -179,7 +179,7 @@ function Resume() {
                                             duration: 1.8,
                                         }}
                                         style={{ marginBottom: '0px', display: 'inline-block' }}
-                                    >Educa<span className='secondary-color'>tion</span>
+                                    >Осв<span className='secondary-color'>іта</span>
                                     </motion.h3>
                                 </div>
                                 <motion.div
@@ -193,7 +193,7 @@ function Resume() {
                                         opacity: 0,
                                     }}
                                     whileInView={{
-                                        width: '98px',
+                                        width: '67px',
                                         opacity: 1
                                     }}
                                     transition={{
@@ -204,7 +204,7 @@ function Resume() {
                             </div>
                             <div className="my-card primary-color">
                                 <motion.div
-                                    className="education-card atom"
+                                    className="education-card atom-u"
                                     whileInView={{
                                         opacity: 1,
                                         rotateY: 0,
@@ -218,14 +218,14 @@ function Resume() {
                                         duration: 1.2,
                                     }} >
                                     <h6>
-                                        Atom online university
+                                        Онлайн університет Atom
                                     </h6>
                                     <p>
-                                        Design Basics, Analytics Setup, SEO Setup, animation, creation of sites for a technical task, prototyping, site adaptation for different types of devices, upgrading sites, working with code
+                                        Основи дизайну, налаштування аналітики, налаштування SEO, анімація, створення сайтів під технічне завдання, прототипування, адаптація сайту під різні типи пристроїв, оновлення сайтів, робота з кодом
                                     </p>
                                 </motion.div>
                                 <motion.div
-                                    className="education-card politeh"
+                                    className="education-card  politeh-u"
                                     whileInView={{
                                         opacity: 1,
                                         rotateY: 0,
@@ -240,14 +240,14 @@ function Resume() {
                                         duration: 1.2,
                                     }}>
                                     <h6>
-                                        Kharkiv Polytechnic Institute
+                                        Харківський політехнічний інститут
                                     </h6>
                                     <p>
-                                        Mechanical engineer
+                                        Інженер-маханік
                                     </p>
                                 </motion.div>
                                 <motion.div
-                                    className="education-card dsns"
+                                    className="education-card dsns-u"
                                     whileInView={{
                                         opacity: 1,
                                         rotateY: 0,
@@ -263,10 +263,10 @@ function Resume() {
                                     }}
                                 >
                                     <h6>
-                                        Sumy Mechanical Engineering College
+                                        Сумський машинобудівний технікум
                                     </h6>
                                     <p>
-                                        Technologist technician</p>
+                                        Технік-технолог</p>
                                 </motion.div>
                             </div>
                         </div>
@@ -287,7 +287,7 @@ function Resume() {
                                             duration: 1.8,
                                         }}
                                         style={{ marginBottom: '0px', display: 'inline-block' }}
-                                    >Experi<span className='secondary-color'>ence</span>
+                                    >Дос<span className='secondary-color'>від</span>
                                     </motion.h3>
                                 </div>
 
@@ -302,7 +302,7 @@ function Resume() {
                                         opacity: 0,
                                     }}
                                     whileInView={{
-                                        width: '107px',
+                                        width: '71px',
                                         opacity: 1
                                     }}
                                     transition={{
@@ -312,7 +312,7 @@ function Resume() {
                                 </motion.div>
                                 <div className="my-card">
                                     <motion.div
-                                        className="education-card atom"
+                                        className="education-card atom-u"
                                         whileInView={{
                                             opacity: 1,
                                             rotateY: 0,
@@ -326,14 +326,14 @@ function Resume() {
                                             duration: 1.2,
                                         }}>
                                         <h6>
-                                            Freelancer
+                                            Фрілансер
                                         </h6>
                                         <p>
-                                            Experienced in HTML, CSS, JavaScript and other relevant tools, I am passionate about developing beautiful, responsive and user-friendly websites that engage audiences and drive success
+                                            Маючи досвід роботи з HTML, CSS, JavaScript та іншими відповідними інструментами, я захоплений розробкою красивих, адаптивних і зручних веб-сайтів, які залучають аудиторію та досягають успіху
                                         </p>
                                     </motion.div>
                                     <motion.div
-                                        className="education-card politeh"
+                                        className="education-card politeh-u"
                                         whileInView={{
                                             opacity: 1,
                                             rotateY: 0,
@@ -347,14 +347,14 @@ function Resume() {
                                             duration: 1.2,
                                         }}>
                                         <h6>
-                                            Protection of the population
+                                            Цивільний захист населення
                                         </h6>
                                         <p>
-                                            Head of the educational and methodical center
+                                            Керівник навчально-методичного центру
                                         </p>
                                     </motion.div>
                                     <motion.div
-                                        className="education-card dsns"
+                                        className="education-card dsns-u"
                                         whileInView={{
                                             opacity: 1,
                                             rotateY: 0,
@@ -369,10 +369,11 @@ function Resume() {
                                         }}
                                     >
                                         <h6>
-                                            State Service of Ukraine for Emergency Situations
+                                            Державна служба України з надзвичайних ситуацій
                                         </h6>
                                         <p>
-                                            Сomprehensive information protection system</p>
+                                            Комплексна система захисту інформації
+                                        </p>
                                     </motion.div>
                                 </div>
 
@@ -385,4 +386,4 @@ function Resume() {
     );
 }
 
-export { Resume }
+export { ResumeU }

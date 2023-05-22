@@ -11,7 +11,7 @@ import cooking from '../../images/cooking.jpg'
 import recipe from '../../images/recipe.jpg'
 import magic from '../../images/magic.jpg'
 
-function Portfolio() {
+function PortfolioU() {
 
     const [enterX, setEnterX] = useState(0);
     const [enterY, setEnterY] = useState(0);
@@ -40,7 +40,7 @@ function Portfolio() {
             item: status1,
             status: setStatus1,
             link: "http://forecast.inf.ua/",
-            text: 'forecasting the possible consequences of an accident at chemically hazardous facilities'
+            text: "прогнозування можливих наслідків аварії на хімічно небезпечних об'єктах"
         },
         {
             img: nuclear,
@@ -48,7 +48,7 @@ function Portfolio() {
             item: status2,
             status: setStatus2,
             link: "http://nuclearsimulation.inf.ua",
-            text: 'simulation of impact factors of a nuclear explosion'
+            text: 'моделювання уражаючих факторів ядерного вибуху'
         },
     ]
 
@@ -59,7 +59,7 @@ function Portfolio() {
             item: status3,
             status: setStatus3,
             link: "https://github.com/Krzheminsky/Magic_Ball",
-            text: "it’s important for you to independently make a decision, tick me"
+            text: "якщо тобі важко самостійно прийняти рішення, тицяй мене"
         },
         {
             img: nativForecast,
@@ -67,7 +67,7 @@ function Portfolio() {
             item: status4,
             status: setStatus4,
             link: "http://forecast.inf.ua/app-release.apk",
-            text: 'forecasting the possible consequences of an accident at chemically hazardous facilities'
+            text: "прогнозування можливих наслідків аварії на хімічно небезпечних об'єктах"
         },
         {
             img: recipe,
@@ -75,7 +75,7 @@ function Portfolio() {
             item: status5,
             status: setStatus5,
             link: "https://github.com/Krzheminsky/CookingCalc",
-            text: 'revisited savory old-fashioned and modern recipes for those who love to eat and cook'
+            text: 'пікантні старі та сучасні рецепти для тих, хто любить їсти і готувати'
         },
         {
             img: nativPrognosis,
@@ -83,7 +83,7 @@ function Portfolio() {
             item: status6,
             status: setStatus6,
             link: "https://",
-            text: 'forecast of recent stagnation of combat toxic chemical speeches'
+            text: 'прогноз можливих наслідків застосування бойових хімічних речовин'
         },
         {
             img: cooking,
@@ -91,7 +91,7 @@ function Portfolio() {
             item: status7,
             status: setStatus7,
             link: "https://github.com/Krzheminsky/CookingCalc",
-            text: 'the given weight and volume of various ingredients'
+            text: "перерахунок мас і об'ємів продуктів харчування"
         },
         {
             img: nativNuclear,
@@ -99,7 +99,7 @@ function Portfolio() {
             item: status8,
             status: setStatus8,
             link: "http://nuclearsimulation.inf.ua/app-release.apk",
-            text: 'simulation of impact factors of a nuclear explosion'
+            text: 'моделювання уражаючих факторів ядерного вибуху'
         },
     ]
 
@@ -248,7 +248,7 @@ function Portfolio() {
 
                     <div className="col s12 title" >
                         <div className="title-about">
-                            <h1 style={{ margin: '0px auto' }}>Portfolio</h1>
+                            <h1 style={{ margin: '0px auto' }}>Портфоліо</h1>
                         </div>
                     </div>
                 </div>
@@ -274,7 +274,7 @@ function Portfolio() {
                                     }}
                                     style={{ marginLeft: '10px', marginBottom: '0px', display: 'inline-block' }}
 
-                                >Web<span className='secondary-color'> Applications</span>
+                                >Інтернет<span className='secondary-color'> додатки</span>
                                 </motion.h3>
                             </div>
                             <motion.div
@@ -289,7 +289,7 @@ function Portfolio() {
                                     opacity: 0,
                                 }}
                                 whileInView={{
-                                    width: '168px',
+                                    width: '170px',
                                     opacity: 1
                                 }}
                                 transition={{
@@ -371,7 +371,7 @@ function Portfolio() {
                                     }}
                                     style={{ marginLeft: '10px', marginBottom: '0px', display: 'inline-block' }}
 
-                                >Native<span className='secondary-color'> Applications</span>
+                                >Мобільні<span className='secondary-color'> додатки</span>
                                 </motion.h3>
                             </div>
                             <motion.div
@@ -386,7 +386,7 @@ function Portfolio() {
                                     opacity: 0,
                                 }}
                                 whileInView={{
-                                    width: '186px',
+                                    width: '176px',
                                     opacity: 1
                                 }}
                                 transition={{
@@ -455,4 +455,4 @@ function Portfolio() {
     );
 }
 
-export { Portfolio }
+export { PortfolioU }

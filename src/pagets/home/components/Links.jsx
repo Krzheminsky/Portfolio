@@ -5,8 +5,8 @@ function Links() {
 
     return (
         <>
-            {link.map(el => (
-                <a className="nav-link" key={el.name} target="_blank" rel="noreferrer" href={el.url}>
+            {link.map((el, key) => (
+                <a className="nav-link" key={key} target="_blank" rel="noreferrer" href={el.url}>
                     <motion.img
                         className='links'
                         src={el.image}

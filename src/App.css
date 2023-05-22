@@ -271,6 +271,8 @@ div.text {
     color: #2eca7f;
 }
 
+
+
 td.contact {
     width: 30px;
 }
@@ -282,4 +284,240 @@ td.contact {
 
 .input-field>label {
     padding-left: 10px;
+}
+
+@media screen and (max-width: 1073px) {
+    div.my-card.what-i-can-do-u {
+        min-height: 187px;
+    }
+}
+
+@media screen and (max-width: 877px) {
+    div.my-card.what-i-can-do-u {
+        min-height: 202px;
+    }
+}
+
+@media screen and (max-width: 777px) {
+    div.my-card.what-i-can-do-u {
+        min-height: 223px;
+    }
+}
+
+@media screen and (max-width: 695px) {
+    div.my-card.what-i-can-do-u {
+        min-height: 244px;
+    }
+}
+
+@media screen and (max-width: 633px) {
+    div.my-card.what-i-can-do-u {
+        min-height: 265px;
+    }
+}
+
+@media screen and (max-width: 602px) {
+    div.my-card.what-i-can-do-u {
+        min-height: 286px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    div.my-card.what-i-can-do-u {
+        min-height: auto;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    div.my-card.what-i-can-do {
+        min-height: 181px;
+    }
+}
+
+@media screen and (max-width: 764px) {
+    div.my-card.what-i-can-do {
+        min-height: 202px;
+    }
+}
+
+@media screen and (max-width: 683px) {
+    div.my-card.what-i-can-do {
+        min-height: 223px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    div.my-card.what-i-can-do {
+        min-height: 244px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    div.my-card.what-i-can-do {
+        min-height: auto;
+    }
+}
+
+@media screen and (max-width: 1054px) {
+    div.education-card.dsns-u {
+        min-height: 100px;
+    }
+}
+
+@media screen and (max-width: 743px) {
+    div.education-card.dsns-u {
+        min-height: 118px;
+    }
+}
+
+@media screen and (max-width: 629px) {
+    div.education-card.dsns-u {
+        min-height: 136px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    div.education-card.dsns-u {
+        min-height: auto;
+    }
+}
+
+
+
+@media screen and (max-width: 950px) {
+    div.education-card.atom-u {
+        min-height: 163px;
+    }
+}
+
+@media screen and (max-width: 825px) {
+    div.education-card.atom-u {
+        min-height: 184px;
+    }
+}
+
+@media screen and (max-width: 731px) {
+    div.education-card.atom-u {
+        min-height: 205px;
+    }
+}
+
+@media screen and (max-width: 665px) {
+    div.education-card.atom-u {
+        min-height: 226px;
+    }
+}
+
+@media screen and (max-width: 619px) {
+    div.education-card.atom-u {
+        min-height: 244px;
+    }
+}
+
+@media screen and (max-width: 605px) {
+    div.education-card.atom-u {
+        min-height: 265px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    div.education-card.atom-u {
+        min-height: auto;
+    }
+}
+
+@media screen and (max-width: 772px) {
+    div.education-card.politeh-u {
+        min-height: 97px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    div.education-card.politeh-u {
+        min-height: 100px;
+    }
+}
+
+@media screen and (max-width: 664px) {
+    div.education-card.politeh-u {
+        min-height: 118px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    div.education-card.politeh-u {
+        min-height: auto;
+    }
+}
+
+@media screen and (max-width: 1045px) {
+    div.education-card.atom {
+        min-height: 146px;
+    }
+}
+
+@media screen and (max-width: 831px) {
+    div.education-card.atom {
+        min-height: 163px;
+    }
+}
+
+@media screen and (max-width: 732px) {
+    div.education-card.atom {
+        min-height: 184px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    div.education-card.atom {
+        min-height: 205px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    div.education-card.atom {
+        min-height: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    div.education-card.politeh-u {
+        min-height: auto;
+    }
+}
+
+@media screen and (max-width: 813px) {
+    div.education-card.politeh {
+        min-height: 100px;
+    }
+}
+
+@media screen and (max-width: 643px) {
+    div.education-card.politeh {
+        min-height: 118px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    div.education-card.politeh {
+        min-height: auto;
+    }
+}
+
+@media screen and (max-width: 956px) {
+    div.education-card.dsns {
+        min-height: 97px;
+    }
+}
+
+@media screen and (max-width: 804px) {
+    div.education-card.dsns {
+        min-height: 118px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    div.education-card.dsns {
+        min-height: auto;
+    }
 }

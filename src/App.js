@@ -7,6 +7,11 @@ import { useTransition, animated, useTrail } from 'react-spring';
 import { Route, useLocation, Routes } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import "./App.css";
+import { HeaderU } from "./layout/HeaderU";
+import { HomeU } from "./pagets/home/HomeU";
+import { ResumeU } from "./pagets/resume/ResumeU";
+import { PortfolioU } from "./pagets/portfolio/PortfolioU";
+import { ContactU } from "./pagets/contact/ContactU";
 function App() {
 
   const anim1 = {
@@ -52,7 +57,21 @@ function App() {
 
   const animationFrom = [anim1, anim2, anim3, anim4, anim5, anim6, anim7, anim8, anim9, anim10];
   const [activeAnimFrom, setActiveAnimFrom] = useState(0);
+  const [ukrainian, setUcrainian] = useState(false);
   const location = useLocation();
+
+  function setUa() {
+    setUcrainian(true)
+  }
+  function setUs() {
+    setUcrainian(false)
+  }
+
+  console.log('ukrainian', ukrainian);
+
+
+
+  // console.log(location.pathname);
 
   useEffect(() => {
     const len = animationFrom.length;
@@ -78,25 +97,50 @@ function App() {
   });
 
   return (
-    <>
-      <Header />
-      <main className="containe " style={{ position: 'relative', overflowX: 'hidden', minHeight: '90vh' }}>
-        {transitions.map(({ item, props, key }) => (
-          <animated.div key={key} style={props}>
-            <div className="primary-card">
-              <Routes location={item}>
-                <Route path="/" element={<Home />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="/portfolio" element={<Portfolio />} />
-                <Route path="/resume" element={<Resume />} />
-              </Routes>
+    <div>
 
-            </div>
+      {!ukrainian ?
+        <div key='uniqueKey'>
+          <Header setUS={setUs} setUA={setUa} />
+          <main className="containe " style={{ position: 'relative', overflowX: 'hidden', minHeight: '90vh' }}>
+            {transitions.map(({ item, props, key }) => (
+              <animated.div key={key} style={props}>
+                <div className="primary-card">
+                  <Routes location={item}>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/contact" element={<Contact />} />
+                    <Route path="/portfolio" element={<Portfolio />} />
+                    <Route path="/resume" element={<Resume />} />
+                  </Routes>
 
-          </animated.div>
-        ))}
-      </main>
-    </>
+                </div>
+
+              </animated.div>
+            ))}
+          </main></div>
+        :
+        <div key='uniqueKeyTwo'>
+          <HeaderU setUS={setUs} setUA={setUa} />
+          <main className="containe " style={{ position: 'relative', overflowX: 'hidden', minHeight: '90vh' }}>
+            {transitions.map(({ item, props, key }) => (
+              <animated.div key={key} style={props}>
+                <div className="primary-card">
+                  <Routes location={item}>
+                    <Route path="/" element={<HomeU />} />
+                    <Route path="/contact" element={<ContactU />} />
+                    <Route path="/portfolio" element={<PortfolioU />} />
+                    <Route path="/resume" element={<ResumeU />} />
+                  </Routes>
+
+                </div>
+
+              </animated.div>
+            ))}
+          </main></div>
+      }
+
+
+    </div>
   );
 }
 

@@ -5,7 +5,7 @@ import { useEffect } from 'react'
 import './Header.css';
 import { motion } from "framer-motion"
 
-function Header({ setUS, setUA }) {
+function HeaderU({ setUS, setUA }) {
 
     useEffect(() => {
         var elem = document.querySelector(".sidenav");
@@ -20,7 +20,7 @@ function Header({ setUS, setUA }) {
 
     const lineHome = {
         initial: { width: 0 },
-        animate: { width: '42px' },
+        animate: { width: '56px' },
     }
     const lineResume = {
         initial: { width: 0 },
@@ -28,11 +28,11 @@ function Header({ setUS, setUA }) {
     }
     const linePortfolio = {
         initial: { width: 0 },
-        animate: { width: '58px' },
+        animate: { width: '72px' },
     }
     const lineContact = {
         initial: { width: 0 },
-        animate: { width: '53px' },
+        animate: { width: '62px' },
     }
 
     return (
@@ -58,7 +58,7 @@ function Header({ setUS, setUA }) {
                             initial="initial"
                             animate="initial"
                             whileHover="animate"
-                        ><NavLink className="primary-color" to="/">Home</NavLink>
+                        ><NavLink className="primary-color" to="/">Головна</NavLink>
                             <motion.div className='line'
                                 variants={lineHome}
                             ></motion.div>
@@ -68,7 +68,7 @@ function Header({ setUS, setUA }) {
                             initial="initial"
                             animate="initial"
                             whileHover="animate"
-                        ><NavLink className="primary-color" to="/resume">Resume</NavLink>
+                        ><NavLink className="primary-color" to="/resume">Резюме</NavLink>
                             <motion.div className='line'
                                 variants={lineResume}
                             ></motion.div>
@@ -78,7 +78,7 @@ function Header({ setUS, setUA }) {
                             initial="initial"
                             animate="initial"
                             whileHover="animate"
-                        ><NavLink className="primary-color" to="/portfolio">Portfolio</NavLink>
+                        ><NavLink className="primary-color" to="/portfolio">Портфоліо</NavLink>
                             <motion.div className='line'
                                 variants={linePortfolio}
                             ></motion.div>
@@ -88,7 +88,7 @@ function Header({ setUS, setUA }) {
                             initial="initial"
                             animate="initial"
                             whileHover="animate"
-                        ><NavLink className="primary-color" to="/contact">Contact</NavLink>
+                        ><NavLink className="primary-color" to="/contact">Контакти</NavLink>
                             <motion.div className='line'
                                 variants={lineContact}
                             ></motion.div>
@@ -110,10 +110,10 @@ function Header({ setUS, setUA }) {
 
                     </ul>
                     <ul id="nav-mobile" className="sidenav">
-                        <li><NavLink className="primary-color" to="/">Home</NavLink></li>
-                        <li><NavLink className="primary-color" to="/resume">Resume</NavLink></li>
-                        <li><NavLink className="primary-color" to="/portfolio">Portfolio</NavLink></li>
-                        <li><NavLink className="primary-color" to="/contact">Contact</NavLink></li>
+                        <li><NavLink className="primary-color" to="/">Головна</NavLink></li>
+                        <li><NavLink className="primary-color" to="/resume">Резюме</NavLink></li>
+                        <li><NavLink className="primary-color" to="/portfolio">Портфоліо</NavLink></li>
+                        <li><NavLink className="primary-color" to="/contact">Контакти</NavLink></li>
                         <li><a className="primary-color" onClick={setUS}>English</a></li>
                         <li><a className="primary-color" onClick={setUA}>Українська</a></li>
                     </ul>
@@ -124,4 +124,4 @@ function Header({ setUS, setUA }) {
     );
 }
 
-export { Header }
+export { HeaderU }
